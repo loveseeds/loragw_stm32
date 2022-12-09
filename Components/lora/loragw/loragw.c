@@ -33,7 +33,7 @@ void loragw_init(void)
     lgw_spi_open(NULL, &spi_target_ptr);
 }
 
-#define BUFF_SIZE   		52
+#define BUFF_SIZE   		200
 #define SX1302_AGC_MCU_MEM  0x0000
 #define SX1302_REG_COMMON   0x5600
 #define SX1302_REG_AGC_MCU  0x5780

@@ -9,7 +9,7 @@ enum {
 };
 
 // spi or vm_spi
-#define LGW_SPI_VM_ENABLE (1)
+#define LGW_SPI_VM_ENABLE (0)
 
 void loragw_spi_port_init(void);
 void loragw_spi_port_cs(char level);

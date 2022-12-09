@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\Components\log;..\..\Components\delay;..\..\Components\Peripherals\spi;..\..\Components\Peripherals\loragw;..\..\Components\Peripherals\loragw_spi;..\..\Components\Peripherals\vm_spi;..\..\Components\Peripherals\loragw_spi_port</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\Components\log;..\..\Components\delay;..\..\Components\Peripherals\spi;..\..\Components\Peripherals\vm_spi;..\..\Components\lora\loragw;..\..\Components\lora\loragw_spi;..\..\Components\lora\loragw_spi_port</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -493,24 +493,29 @@
               <FilePath>..\..\Components\Peripherals\spi\spi.c</FilePath>
             </File>
             <File>
-              <FileName>loragw.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Components\Peripherals\loragw\loragw.c</FilePath>
-            </File>
-            <File>
-              <FileName>loragw_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Components\Peripherals\loragw_spi\loragw_spi.c</FilePath>
-            </File>
-            <File>
               <FileName>vm_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Components\Peripherals\vm_spi\vm_spi.c</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>LoRa</GroupName>
+          <Files>
+            <File>
+              <FileName>loragw.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Components\lora\loragw\loragw.c</FilePath>
+            </File>
+            <File>
+              <FileName>loragw_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Components\lora\loragw_spi\loragw_spi.c</FilePath>
+            </File>
             <File>
               <FileName>loragw_spi_port.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\Components\Peripherals\loragw_spi_port\loragw_spi_port.c</FilePath>
+              <FilePath>..\..\Components\lora\loragw_spi_port\loragw_spi_port.c</FilePath>
             </File>
           </Files>
         </Group>
